@@ -34,7 +34,7 @@ namespace EmailService
                 {                    
                     // Se utiliza el servicio de Mailtrap.io para el envio de mensajes
                     // Mailtrap.io es un servidor SMTP que atrapa correos, asi que no llegan a destino
-                    // Los parametros estan appsettings.json del proyecto principal
+                    // Los parametros estan en appsettings.json del proyecto principal
 
                     client.CheckCertificateRevocation = true;
                     client.Connect(_emailConfig.SmtpServer, _emailConfig.Port, SecureSocketOptions.StartTls);
